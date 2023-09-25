@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-la">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Fabian | Conversion de binarios</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="cab">
+            <img src="logo.png">
+           <h2>𓂀 ℙ𝕣𝕠𝕪𝕖𝕔𝕥𝕠 𝔽𝕒𝕓𝕚𝕒𝕟 𓂀</h2>
+            <h4>★彡[ᴄᴏɴᴠᴇʀꜱɪᴏɴ ᴅᴇ ɴᴜᴍᴇʀᴏꜱ]彡★</h4>
+            <hr>
+        </div>
+        <div class="boddy">
+            <br><br><br><br><br>
+           
+            <label for="">Seleccione tipo de Conversion</label><br><br>
+
+            <input type="radio" name="tipo" value="1" checked  onClick="limpiar()">   <label for="">Decimal a Binario</label><br>
+            <input type="radio" name="tipo" value="2" onClick="limpiar()"> <label for="">Binario a Decimal</label><br><br>
+
+            <label for="">Numero a Convertir:</label><br><label id="message"></label><br>
+            <input type="text" id="number" name="number" onkeypress="return solo_num(event)" required><br><br>
+            
+            <input type="button" value="Convertir" onclick="Convert()"><br><br>
+            <label for="" id="resultado"></label>
+        </div>
+        <div class="footer">
+            <p>Copyright © Thezero 2023</p>
+        </div>
+    </div>
+  
+</body>
+
+  <script src="main.js"></script>
+</html>
